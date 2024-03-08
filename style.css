@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family-Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent+Marker' , sans-serif;
+}
+
+body{
+    /*CARACTERISTICAS MODO OSCURO*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 1.5s ease;
+
+    /*CARACTERISTICAS CUERPO*/
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+    /*background: #222; Fondo de color*/
+}
+/*Modo oscuro*/
+#toggle{
+    display: none;
+}
+#label_toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    color: #2986FF;
+    cursor: pointer;
+
+}
+.dark{
+    background-color: #1E2B3C;
+    color: #F3F3F3;
+    transition: all 1s ease;
+}
+
+p{
+    color: inherit;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    top: 45%;
+    left: 10%;
+}
+.banner{
+    position: relative;
+    min-height: 80vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    /* Contenedor 
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+        inset -5px -5px 15px rgba(255,255,255,0.1),
+        5px 5px 15px rgba(0,0,0,0.3),
+        -5px -5px 15px rgba(255,255,255,0.1);
+    */
+}
+
+.banner .title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 30px;
+    font-size: 3em;
+    color: inherit;
+    /* Color de sombra del texto
+    text-shadow: 0 0 20px #FF005B 
+    */
+}
+
+.from-control{
+    box-sizing: content-box;
+    width: 95%;
+    border: solid black 2px;
+    padding: 5px;
+}
